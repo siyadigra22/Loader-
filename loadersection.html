@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        .loader-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .loader-heading {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .loader-button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-screen">
+        <div class="loader-content">
+            <h1 class="loader-heading">Meanwhile, let's play something interesting</h1>
+            <button class="loader-button" onclick="showGameSection()">Let's Play</button>
+        </div>
+    </div>
+
+    <script>
+        function showGameSection() {
+            window.location.href = "game.html";
+        }
+    </script>
+</body>
+</html>
